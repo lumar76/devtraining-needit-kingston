@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:mkbranch_wsdl">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:exec soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <project xsi:type="xsd:string">${project}</project>
+         <branch xsi:type="xsd:string">${branch}</branch>
+      </urn:exec>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>exec</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>SVN_mkbranch [ exec ]</qualified_name>
+        <soap_action>urn:mkbranch_wsdl#exec</soap_action>
+        <soap_endpoint>http://192.168.37.177/cgi-bin/mkbranch_wsdl.cgi</soap_endpoint>
+        <soap_message display_value="SVN_mkbranch">1b80469fdb032300d3b8112039961972</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-22 09:32:40</sys_created_on>
+        <sys_id>b2f1029fdb032300d3b811203996193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>exec</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_b2f1029fdb032300d3b811203996193e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-22 09:32:40</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>
